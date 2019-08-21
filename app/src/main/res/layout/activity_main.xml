@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".view.activity.MainActivity">
+    <ImageView
+        android:id="@+id/phone_main"
+        android:layout_width="30dp"
+        android:background="@drawable/login_icon_phone"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/name_main"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       android:background="@null"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="36dp"
+        android:hint="手机号"
+        android:layout_alignBottom="@id/phone_main"
+        android:textColorHint="#ffffff" />
+    <View
+        android:id="@+id/view_name_main"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+       android:layout_below="@id/phone_main"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/lock_main"
+        android:layout_width="30dp"
+        android:background="@drawable/login_icon_lock"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/view_name_main"
+        android:layout_marginLeft="30dp"
+        android:layout_height="30dp" />
+    <EditText
+        android:id="@+id/pwd_main"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="36dp"
+        android:hint="登录密码"
+        android:layout_alignBottom="@id/lock_main"
+        android:textColorHint="#ffffff" />
+    <ImageView
+        android:id="@+id/eye_main"
+        android:layout_width="24dp"
+        android:background="@drawable/login_icon_eye"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@id/view_name_main"
+        android:layout_below="@id/view_name_main"
+        android:layout_height="24dp" />
+    <View
+        android:id="@+id/view_pwd_main"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_below="@id/pwd_main"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_height="1dp"/>
+    <CheckBox
+        android:id="@+id/check_main"
+        android:layout_below="@id/view_pwd_main"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="36dp"
+        android:text="记住密码"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/regin_main"
+        android:text="快速注册"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view_pwd_main"
+        android:layout_alignRight="@id/view_pwd_main"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/login_main"
+            android:text="登录"
+            android:textColor="#f10d0d"
+            android:background="#ffffff"
+            android:layout_width="280dp"
+            android:layout_marginLeft="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_height="40dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+<CheckBox
+    android:id="@+id/check_child"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_child"
+            android:layout_width="wrap_content"
+            android:text="sac"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/price_child"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <bawei.com.gouwuche.view.weight.Jianji
+        android:id="@+id/jianji_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></bawei.com.gouwuche.view.weight.Jianji>
+</LinearLayout>
